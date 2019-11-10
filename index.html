@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KYC Portal</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.11/css/all.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="content">
+                <img src="images/notification(3).png" alt="notification" id="bell">
+                <img src="images/user.png" alt="user" id="user">
+                <a href="#">Olaniyi<i class="fas fa-chevron-down"></i></a>
+            </div>
+        </header>
+
+        <main>
+            <div class="main-container">
+                <div class="main-side">
+                    <a href="#" id="active"><img src="images/png(1)" alt="dashboard">Dashboard</a>
+                    <a href="#"><img src="images/identification.png" alt="contact">Create Corporate</a>
+                </div>
+
+                <div class="main-body">
+                    <div class="cards">
+                        <div class="blue-card">
+                            <div class="top">
+                                <p>Total Number of Corporates</p>
+                                <button id="blue">Created</button>
+                            </div>
+                            <p id="num">300</p>
+                            <p id="date">Created 12, Feb 2017</p>
+                        </div>
+
+                        <div class="green-card">
+                            <div class="top">
+                                <p>Total Number of Corporates</p>
+                                <button id="green">Approved</button>
+                            </div>
+                            <p id="num">100</p>
+                            <p id="date">Created 12, Feb 2017</p>
+                        </div>
+
+                        <div class="yellow-card">
+                            <div class="top">
+                                <p>Total Number of Corporates</p>
+                                <button id="yellow">Pending</button>
+                            </div>
+                            <p id="num">150</p>
+                            <p id="date">Created 12, Feb 2017</p>
+                        </div>
+
+                        <div class="red-card">
+                            <div class="top">
+                                <p>Total Number of Corporates</p>
+                                <button id="red">Deferred</button>
+                            </div>
+                            <p id="num">50</p>
+                            <p id="date">Created 12, Feb 2017</p>
+                        </div>
+                    </div>
+
+                    <div class="searching">
+                        <div class="search-items">
+                            <form action="/action_page.php" id="select">
+                                <input type="text" name="fname" placeholder="Search by user ID, company name, corporate type, sector...">
+                            </form>
+                            <select name="search option" form="select">
+                                <option value="Businees Name">by Businees Name</option>
+                                <option value="user ID">by user ID</option>
+                                <option value="Company Name">by Company Name</option>
+                                <option value="Corporate type">by Corporate Type</option>
+                                <option value="Sector">by Sector</option>
+                            </select>
+                            <button type="button" onclick="alert('Selected!')">Search</button>
+                        </div>
+                    </div>
+
+                    <p id="acct">Account History</p>
+
+                    <div class="account-pages">
+                        <div class="top-page">
+                            <input type="checkbox">
+                            <p><i class="fas fa-redo"></i> 1-100 of 350  <a href="#">❮</a> <a href="#">❯</a></p>
+                        </div>
+
+                        <div class="bottom-page">
+                            <a href="#" class="active">Total Corporates Created</a>
+                            <a href="#">Total Corporates Approved</a>
+                            <a href="#">Total Corporates Pending</a>
+                            <a href="#">Total Corporates Deferred</a>
+                        </div>
+                    </div>
+
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <th>USER ID</th>
+                                <th>BUSINESS NAME</th>
+                                <th>CORPORATE TYPE</th>
+                                <th>SECTOR/INDUSTRY</th>
+                                <th>KYC STATUS</th>
+                                <th id="risk">RISK RATING</th>
+                                <th>ACTION</th>
+                            </tr>
+                            <tr id="line">
+                                <td><input type="checkbox" id="check">COP12345</td>
+                                <td id="name">Bola Akinjudo</td>
+                                <td>Private Limited Company</td>
+                                <td>Oil and Gas</td>
+                                <td><button id="green">Approved</button></td>
+                                <td class="green">Low<i class="fas fa-long-arrow-alt-down"></i></td>
+                                <td id="edit">Edit</td>
+                            </tr>
+                            <tr id="line">
+                                <td><input type="checkbox">COP12345</td>
+                                <td id="name">Kelechi Amacree</td>
+                                <td>Public Limited Company</td>
+                                <td>FMCG</td>
+                                <td><button id="yellow">Pending</button></td>
+                                <td class="green">Low<i class="fas fa-long-arrow-alt-down"></i></td>
+                                <td id="edit">Edit</td>
+                            </tr>
+                            <tr id="line">
+                                <td><input type="checkbox">COP12345</td>
+                                <td id="name">Abdul Hussein</td>
+                                <td>Soleproprietorship</td>
+                                <td>Products & Services</td>
+                                <td><button id="red">Deferred</button></td>
+                                <td class="red">Critical<i class="fas fa-long-arrow-alt-up"></i></td>
+                                <td id="edit">Edit</td>
+                            </tr>
+                            <tr id="line">
+                                <td><input type="checkbox">COP12345</td>
+                                <td id="name">David Mark James</td>
+                                <td>NGO</td>
+                                <td>NGO</td>
+                                <td><button id="green">Approved</button></td>
+                                <td class="green">Low<i class="fas fa-long-arrow-alt-down"></i></td>
+                                <td id="edit">Edit</td>
+                            </tr>
+                            <tr id="line">
+                                <td><input type="checkbox">COP12345</td>
+                                <td id="name">Daniel Andei</td>
+                                <td>Individual Tier 1</td>
+                                <td>Shopping/Retail</td>
+                                <td><button id="yellow">Pending</button></td>
+                                <td class="green">Medium<i class="fas fa-long-arrow-alt-down"></i></td>
+                                <td id="edit">Edit</td>
+                            </tr>
+                            <tr id="line">
+                                <td><input type="checkbox">COP12345</td>
+                                <td id="name">Anna Aisha Uche</td>
+                                <td>Individual Tier 1</td>
+                                <td>Retail Services</td>
+                                <td><button id="yellow">Pending</button></td>
+                                <td class="yellow">Medium<i class="fas fa-long-arrow-alt-right"></i></td>
+                                <td id="edit">Edit</td>
+                            </tr>
+                            <tr id="line">
+                                <td><input type="checkbox">COP12345</td>
+                                <td id="name">Sesan Afeye aWale</td>
+                                <td>Public Limited Company</td>
+                                <td>Health/Beauty</td>
+                                <td><button id="red">Deferred</button></td>
+                                <td class="red">Critical<i class="fas fa-long-arrow-alt-up"></i></td>
+                                <td id="edit">Edit</td>
+                            </tr>
+                        </table>
+                    </div>    
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
