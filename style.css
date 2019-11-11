@@ -31,6 +31,7 @@ img#bell {
     background: #EEF2F7;
 }
 
+/* Header */
 header {
     background: #00425F;
     height: 9vh;
@@ -64,12 +65,14 @@ header .content {
     padding-left: 5px;
 }
 
+/* Main */
 .main-container {
     display: grid;
     grid-template-columns: 211px auto;
     grid-template-rows: 1fr auto;
 }
 
+/* Side bar */
 .main-side {
     background: #ffffff;
     padding: 10px;
@@ -95,10 +98,12 @@ header .content {
     color: #3897EB;
 }
 
+/* Main body */
 .main-body {
     padding: 10px 20px;
 }
 
+/* Information cards */
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -160,6 +165,7 @@ header .content {
     background: #D21C1C;
 }
 
+/* Search bar */
 .searching {
     margin-top: 30px;
     padding-bottom: 25px;
@@ -195,6 +201,11 @@ select {
     border-radius: 4px 0px 0px 4px;
 }
 
+select, option {
+    color: rgba(75, 75, 75, 0.5);
+}
+
+/* Account History */
 p#acct {
     padding-bottom: 25px;
 }
@@ -202,10 +213,11 @@ p#acct {
 .account-pages {
     height: 108px;
     background: #ffffff;
-    padding: 10px 15px;
+    padding: 10px 0;
 }
 
 .top-page {
+    padding: 0 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -237,17 +249,18 @@ p#acct {
 .bottom-page a {
     width: 250px;
     text-decoration: none;
-    padding-right: 0 30px;
+    padding-right: 30px;
     font-size: 14px;
     letter-spacing: 0.01em;
     color: rgba(75, 75, 75, 0.5);
 }
 
 a.active {
-    padding-bottom: 20px;
+    padding: 0 0 22px 15px;
     border-bottom: 2px solid #4B4B4B;
 }
 
+/* Table */
 .table {
     margin-top: 15px;
     background: #ffffff;

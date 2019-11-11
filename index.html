@@ -10,6 +10,8 @@
 </head>
 <body>
     <div class="container">
+        
+        <!-- Header -->
         <header>
             <div class="content">
                 <img src="images/notification(3).png" alt="notification" id="bell">
@@ -18,14 +20,20 @@
             </div>
         </header>
 
+        <!-- Main -->
         <main>
             <div class="main-container">
+                
+                <!-- Side bar -->
                 <div class="main-side">
                     <a href="#" id="active"><img src="images/png(1)" alt="dashboard">Dashboard</a>
                     <a href="#"><img src="images/identification.png" alt="contact">Create Corporate</a>
                 </div>
 
+                <!-- Main body -->
                 <div class="main-body">
+                    
+                    <!-- Information cards -->
                     <div class="cards">
                         <div class="blue-card">
                             <div class="top">
@@ -64,22 +72,24 @@
                         </div>
                     </div>
 
+                    <!-- Search bar -->
                     <div class="searching">
                         <div class="search-items">
                             <form action="/action_page.php" id="select">
                                 <input type="text" name="fname" placeholder="Search by user ID, company name, corporate type, sector...">
                             </form>
                             <select name="search option" form="select">
-                                <option value="Businees Name">by Businees Name</option>
-                                <option value="user ID">by user ID</option>
-                                <option value="Company Name">by Company Name</option>
-                                <option value="Corporate type">by Corporate Type</option>
-                                <option value="Sector">by Sector</option>
+                                <option value="Businees Name">Search by Businees Name</option>
+                                <option value="user ID">Search by user ID</option>
+                                <option value="Company Name">Search by Company Name</option>
+                                <option value="Corporate type">Search by Corporate Type</option>
+                                <option value="Sector">Search by Sector</option>
                             </select>
                             <button type="button" onclick="alert('Selected!')">Search</button>
                         </div>
                     </div>
 
+                    <!-- Account History -->
                     <p id="acct">Account History</p>
 
                     <div class="account-pages">
@@ -96,6 +106,7 @@
                         </div>
                     </div>
 
+                    <!-- Table -->
                     <div class="table">
                         <table>
                             <tr>
